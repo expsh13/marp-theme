@@ -1,0 +1,11 @@
+%%{init: {"theme":"base","themeVariables":{"fontFamily":"Hiragino Sans, Noto Sans JP, sans-serif","fontSize":"26px","primaryColor":"#d9f7fd","primaryBorderColor":"#2fa7c6","primaryTextColor":"#1f1f1f","lineColor":"#303030","secondaryColor":"#d9f7fd","tertiaryColor":"#fffefd"},"flowchart":{"curve":"basis","nodeSpacing":48,"rankSpacing":64}}}%%
+flowchart LR
+  input["入力"] --> check{"内容を確認"}
+  check -->|&nbsp;OK&nbsp;| process["処理を実行"]
+  check -->|&nbsp;要修正&nbsp;| revise["内容を修正"]
+  revise --> check
+  process --> done["完了"]
+
+  classDef primary fill:#d9f7fd,stroke:#2fa7c6,color:#1f1f1f,stroke-width:3px;
+  class input,check,process,revise,done primary;
+  linkStyle default stroke:#303030,stroke-width:3px;

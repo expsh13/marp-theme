@@ -1,0 +1,18 @@
+{
+  "name": "marp-theme",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "preview": "marp ./slides --theme-set ./theme.css --server",
+    "render:mermaid": "mmdc -i ./slides/assets/mermaid-flow.mmd -o ./slides/assets/mermaid-flow.svg -b transparent",
+    "precopy-assets": "mkdir -p ./dist/assets",
+    "copy-assets": "cp -R ./slides/assets/. ./dist/assets/",
+    "prehtml": "npm run copy-assets",
+    "html": "marp ./slides/sample.md --theme-set ./theme.css --output ./dist/sample.html",
+    "pdf": "marp ./slides/sample.md --theme-set ./theme.css --allow-local-files --pdf --output ./dist/sample.pdf"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^11.12.0",
+    "@marp-team/marp-cli": "^4.5.0"
+  }
+}

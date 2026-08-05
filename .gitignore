@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Generated slides
+dist/
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
