@@ -179,6 +179,26 @@ section.title h1 {
   letter-spacing: -0.065em;
 }
 
+section.title.compact-title h1 {
+  font-size: 90px;
+  white-space: nowrap;
+}
+
+section.title.approval-title h1 {
+  font-size: 78px;
+}
+
+section.title .title-date {
+  position: absolute;
+  z-index: 1;
+  left: 80px;
+  bottom: 48px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 26px;
+  letter-spacing: 0.04em;
+}
+
 section.title::after,
 section.section-dark::after {
   display: none;
@@ -212,6 +232,16 @@ section.section-dark.chapter .label {
 
 section.section-dark.chapter h1 {
   font-size: 100px;
+}
+
+section.section-dark.disclaimer-slide h1 {
+  font-size: 70px;
+  line-height: 1.28;
+}
+
+section.section-dark.disclaimer-slide .label {
+  margin: 0 0 28px;
+  font-size: 25px;
 }
 
 section.lead {
@@ -337,6 +367,19 @@ section.quiz h2::before {
   font-weight: 600;
 }
 
+section.lead .compact-note {
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+section.lead .dark-note {
+  color: var(--ink);
+}
+
+section.section-dark .next-bottleneck-note {
+  color: #fff;
+}
+
 section.quiz .note {
   margin-top: 28px;
 }
@@ -362,6 +405,13 @@ section.quiz .note {
 .two-column > div {
   border-top: 8px solid var(--aqua);
   padding-top: 24px;
+}
+
+.two-column .inline-note {
+  display: block;
+  color: var(--muted);
+  font-size: 28px;
+  font-weight: 600;
 }
 
 .media-layout {
