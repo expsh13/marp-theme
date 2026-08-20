@@ -234,16 +234,6 @@ section.section-dark.chapter h1 {
   font-size: 100px;
 }
 
-section.section-dark.disclaimer-slide h1 {
-  font-size: 70px;
-  line-height: 1.28;
-}
-
-section.section-dark.disclaimer-slide .label {
-  margin: 0 0 28px;
-  font-size: 25px;
-}
-
 section.lead {
   display: flex;
   flex-direction: column;

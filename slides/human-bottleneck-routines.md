@@ -24,15 +24,6 @@ size: 16:9
 
 ---
 
-<!-- _class: section-dark chapter disclaimer-slide -->
-<!-- _paginate: false -->
-
-<span class="label">スタンス</span>
-
-# 本LTは現時点で<br>試していることであり<br>推奨するものではありません！
-
----
-
 <!-- _class: three-points -->
 
 <span class="label">AIの強み</span>
