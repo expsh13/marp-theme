@@ -587,6 +587,192 @@ section.summary-slide {
   line-height: 1.45;
 }
 
+section.human-parallel {
+  display: flex;
+  flex-direction: column;
+}
+
+section.human-parallel h2 {
+  margin-bottom: 16px;
+}
+
+.parallel-diagram {
+  display: flex;
+  width: 100%;
+  max-width: 1120px;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.parallel-caption {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 26px;
+}
+
+.parallel-axis {
+  color: var(--ink);
+  font-size: 28px;
+}
+
+.parallel-grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  align-items: center;
+  gap: 14px 28px;
+}
+
+.parallel-task {
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.parallel-task-a {
+  color: var(--coral);
+}
+
+.parallel-task-b {
+  color: var(--blue);
+}
+
+.parallel-task-c {
+  color: var(--aqua);
+}
+
+.parallel-track {
+  display: grid;
+  height: 72px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.parallel-work,
+.parallel-wait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 26px;
+}
+
+.parallel-work {
+  color: #fff;
+}
+
+.parallel-work.task-a {
+  background: var(--coral);
+}
+
+.parallel-work.task-b {
+  background: var(--blue);
+}
+
+.parallel-work.task-c {
+  background: var(--aqua);
+}
+
+.parallel-wait {
+  border: 3px dashed rgba(31, 31, 31, 0.24);
+  background: rgba(31, 31, 31, 0.055);
+  color: var(--muted);
+  font-size: 22px;
+}
+
+.parallel-note {
+  margin: 28px 0 0;
+  font-size: 32px;
+  line-height: 1.35;
+}
+
+section.waiting-bottleneck {
+  display: flex;
+  flex-direction: column;
+}
+
+section.waiting-bottleneck h2 {
+  margin-bottom: 12px;
+  font-size: 48px;
+  line-height: 1.12;
+}
+
+.waiting-diagram {
+  display: grid;
+  width: 100%;
+  max-width: 1160px;
+  flex: 0 0 auto;
+  grid-template-columns: 1fr;
+  align-items: center;
+  align-self: center;
+  margin-top: 72px;
+  gap: 28px;
+}
+
+.waiting-task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.waiting-task-row {
+  display: grid;
+  grid-template-columns: 126px 1fr;
+  align-items: center;
+  gap: 18px;
+}
+
+.waiting-task-name {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.waiting-task-a {
+  color: var(--coral);
+}
+
+.waiting-task-b {
+  color: var(--blue);
+}
+
+.waiting-task-c {
+  color: var(--aqua);
+}
+
+.waiting-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.waiting-block {
+  display: flex;
+  min-height: 82px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.waiting-active {
+  flex: 1;
+  background: var(--coral);
+  color: #fff;
+}
+
+.waiting-paused {
+  flex: 1;
+  border: 4px dashed rgba(31, 31, 31, 0.26);
+  background: rgba(31, 31, 31, 0.055);
+  color: var(--muted);
+}
+
 .timeline {
   position: relative;
   display: grid;

@@ -24,6 +24,14 @@ size: 16:9
 
 ---
 
+<!-- _class: lead -->
+
+<span class="label">結論</span>
+
+## 解決にはClaude Code Routinesが<br>有効かもしれない
+
+---
+
 <!-- _class: three-points -->
 
 <span class="label">AIの強み</span>
@@ -45,6 +53,79 @@ size: 16:9
     <span class="point-number">03</span>
     <h3>並列処理</h3>
     <p>複数の調査や実装を同時に進められる</p>
+  </div>
+</div>
+
+---
+
+<!-- _class: human-parallel -->
+
+## 人間はタスクを並列には扱えない
+
+<div class="parallel-diagram">
+  <div class="parallel-caption">
+    <span class="parallel-axis">時間 →</span>
+  </div>
+
+  <div class="parallel-grid">
+    <div class="parallel-task parallel-task-a">タスクA</div>
+    <div class="parallel-track">
+      <span class="parallel-work task-a">作業</span>
+      <span class="parallel-wait">待ち</span>
+      <span class="parallel-wait">待ち</span>
+      <span class="parallel-work task-a">作業</span>
+      <span class="parallel-wait">待ち</span>
+      <span class="parallel-wait">待ち</span>
+    </div>
+    <div class="parallel-task parallel-task-b">タスクB</div>
+    <div class="parallel-track">
+      <span class="parallel-wait">待ち</span>
+      <span class="parallel-work task-b">作業</span>
+      <span class="parallel-wait">待ち</span>
+      <span class="parallel-wait">待ち</span>
+      <span class="parallel-work task-b">作業</span>
+      <span class="parallel-wait">待ち</span>
+    </div>
+    <div class="parallel-task parallel-task-c">タスクC</div>
+    <div class="parallel-track">
+      <span class="parallel-wait">待ち</span>
+      <span class="parallel-wait">待ち</span>
+      <span class="parallel-work task-c">作業</span>
+      <span class="parallel-wait">待ち</span>
+      <span class="parallel-wait">待ち</span>
+      <span class="parallel-work task-c">作業</span>
+    </div>
+  </div>
+
+  <p class="parallel-note">仕事で扱うことの多い言語情報は<br>同じ脳のワーキングメモリを使用するので並列に扱い難い</p>
+</div>
+
+---
+
+<!-- _class: waiting-bottleneck -->
+
+## 大抵は長い待ち時間のタスクが多くなる
+
+<div class="waiting-diagram">
+  <div class="waiting-task-list">
+    <div class="waiting-task-row">
+      <div class="waiting-task-name waiting-task-a">タスクA</div>
+      <div class="waiting-line">
+        <span class="waiting-block waiting-active">人間が作業中</span>
+      </div>
+    </div>
+    <div class="waiting-task-row">
+      <div class="waiting-task-name waiting-task-b">タスクB</div>
+      <div class="waiting-line">
+        <span class="waiting-block waiting-paused">待ち時間</span>
+      </div>
+    </div>
+    <div class="waiting-task-row">
+      <div class="waiting-task-name waiting-task-c">タスクC</div>
+      <div class="waiting-line">
+        <span class="waiting-block waiting-paused">待ち時間</span>
+      </div>
+    </div>
   </div>
 </div>
 
