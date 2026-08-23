@@ -97,7 +97,7 @@ size: 16:9
     </div>
   </div>
 
-  <p class="parallel-note">仕事で扱うことの多い言語情報は<br>同じ脳のワーキングメモリを使用するので並列に扱い難い</p>
+  <p class="parallel-note">脳の構造として仕事で扱うことの多い言語情報は<br>同じ脳のワーキングメモリを使用するので並列に扱い難い</p>
 </div>
 
 ---
@@ -128,23 +128,6 @@ size: 16:9
     </div>
   </div>
 </div>
-
----
-
-<!-- _class: lead -->
-
-<span class="label">一応人間の強みも</span>
-
-## AIは、与えていない<br>コンテキストを読めない
-
-<p class="lead-note">暗黙知、過去の経緯、組織の事情など、<br>人間は開発周辺のコンテキストを持っている</p>
-
-<p class="note">※直近では<a href="https://zed.dev/blog/introducing-delta">Delta</a>のようなコラボレーションツールも出てきており、ここも変わっていきそう</p>
-
-<!--
-[Sources]
-- https://zed.dev/blog/introducing-delta
--->
 
 ---
 
@@ -207,7 +190,7 @@ size: 16:9
 
 <p class="lead-note">セッション間での介入が不要になった</p>
 
-<p class="lead-note">Opus 5の登場でFable 5と同等の能力をコストを抑えて使用できるようになった</p>
+<p class="lead-note">Opus 5の登場でFable 5と同等？の能力をコストを抑えて使用できるようになった</p>
 
 <p class="lead-note">→<a href="https://code.claude.com/docs/ja/routines">ルーティン</a>を活用し何度も自律的に起動し動かす</p>
 
